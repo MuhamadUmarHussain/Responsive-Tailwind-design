@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="../Assets/faviconV2.png"
+      type="image/x-icon"
+    />
+    <title>
+      Best Hybrid/Onsite Internships leading to job - Ezitech Institute
+    </title>
+  </head>
+  <body class="">
+    <!-- Contact Info -->
+
+    <div
+      class="topdata hidden absolute bg-[#0056ff] space-y-4 px-5 text-white lg:static lg:block xl:flex xl:flex-row-reverse xl:justify-center xl:items-center xl:space-y-0"
+    >
+      <div class="top flex space-x-7 justify-end items-center py-2">
+        <div class="links flex space-x-2 xl:mx-10">
+          <img class="w-4" src="../Assets/facebook_logo.png" alt="loading" />
+          <img class="w-4" src="../Assets/instagram_logo.png" alt="loading" />
+          <img src="../Assets/BE_logo.png" alt="loading" />
+          <img class="w-4" src="../Assets/In_logo.png" alt="loading" />
+          <img class="w-4" src="../Assets/youtube_logo.png" alt="loading" />
+        </div>
+
+        <div class="entry flex space-x-3 xl:items-center">
+          <div class="login flex space-x-2 xl:items-center">
+            <img
+              class="w-6 xl:w-4 xl:h-4"
+              src="../Assets/icons8-account-48.png"
+              alt="loading"
+            />
+            <a class="xl:text-sm" href="#">Login</a>
+          </div>
+
+          <div class="line text-gray-500">
+            <p>|</p>
+          </div>
+
+          <div class="registry">
+            <a class="xl:text-sm" href="#">Register</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="bottom py-1">
+        <div class="data flex space-x-3 justify-center items-center">
+          <div class="phone flex space-x-2 text-sm items-center">
+            <img class="w-4" src="../Assets/call logo.png" alt="loading" />
+            <a href="#"> +92 3455555396</a>
+          </div>
+
+          <div class="address flex space-x-2 text-sm items-center">
+            <img class="w-4" src="../Assets/location_logo.png" alt="loading" />
+            <a href="#"
+              >Westridge 1, Office #304-B Peshawar Road, Rawalpindi, Pakistan</a
+            >
+          </div>
+
+          <div class="time flex space-x-2 text-sm items-center">
+            <img class="w-4" src="../Assets/time_logo.png" alt="loading" />
+            <a href="#">Mon - Fri 8.00 - 20.00</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Nav Bar and Front Page -->
+
+    <div
+      class="background_image lg:bg-[url('../Assets/first_background.jpg')] bg-cover bg-no-repeat lg:h-screen"
+    >
+      <!-- Nav Bar -->
+
+      <nav
+        class="flex flex-wrap items-center justify-between py-4 xl:justify-center"
+      >
+        <div class="left">
+          <img
+            class="w-36 lg:hidden"
+            src="../Assets/logo-mobile.png"
+            alt="loading"
+          />
+          <img
+            class="hidden w-36 lg:block"
+            src="../Assets/logo.png"
+            alt="loading"
+          />
+        </div>
+
+        <div id="humburger"
+          class="middle w-full absolute -translate-x-[68rem] translate-y-[280px] bg-gray-500 p-2 lg:static lg:w-fit lg:-translate-x-0 lg:-translate-y-0 lg:bg-transparent lg:p-0 xl:mx-20 lg:hover:text-gray-400"
+        >
+          <div
+            class="menu_bar flex flex-col space-y-5 lg:flex-row lg:space-y-0"
+          >
+            <a
+              class="text-center border-2 border-white p-4 lg:border-0 lg:text-start lg:text-white lg:font-sans lg:font-bold lg:hover:text-gray-400"
+              href="#"
+              >HOME</a
+            >
+            <a
+              class="text-center border-2 border-white p-4 lg:border-0 lg:text-start lg:text-white lg:font-sans lg:font-bold lg:hover:text-gray-400"
+              href="#"
+              >ABOUT US</a
+            >
+            <a
+              class="text-center border-2 border-white p-4 lg:border-0 lg:text-start lg:text-white lg:font-sans lg:font-bold lg:hover:text-gray-400"
+              href="#"
+              >CERTIFICATIONS</a
+            >
+            <a
+              class="text-center border-2 border-white p-4 lg:border-0 lg:text-start lg:text-white lg:font-sans lg:font-bold lg:hover:text-gray-400"
+              href="#"
+              >INTERNSHIPS</a
+            >
+            <a
+              class="text-center border-2 border-white p-4 lg:border-0 lg:text-start lg:text-white lg:font-sans lg:font-bold lg:hover:text-gray-400"
+              href="#"
+              >SEMINARS</a
+            >
+            <a
+              class="text-center border-2 border-white p-4 lg:border-0 lg:text-start lg:text-white lg:font-sans lg:font-bold lg:hover:text-gray-400"
+              href="#"
+              >TECH BLOGS</a
+            >
+          </div>
+        </div>
+
+        <div onclick="show()" class="right flex justify-center items-center">
+          <div class="fav p-4 lg:hidden">
+            <div class="lines bg-gray-500 w-6 my-1 h-[3px] rounded-full"></div>
+            <div class="lines bg-gray-500 w-6 my-1 h-[3px] rounded-full"></div>
+            <div class="lines bg-gray-500 w-6 my-1 h-[3px] rounded-full"></div>
+          </div>
+          <div
+            class="account h-10 w-10 bg-blue-700 flex justify-center items-center rounded-full mx-2 lg:hidden"
+          >
+            <img
+              class="w-[20px] h-[20px] text-white"
+              src="../Assets/account_logo.png"
+              alt="loading"
+            />
+          </div>
+
+          <div
+            class="large_menu hidden lg:block lg:flex lg:justify-center lg:items-center lg:space-x-3 lg:mx-3"
+          >
+            <div
+              class="heart lg:h-10 lg:w-10 lg:hover:bg-pink-600 lg:rounded-full lg:flex lg:justify-center lg:items-center"
+            >
+              <img class="w-5" src="../Assets/heart.png" alt="loading" />
+            </div>
+            <div
+              class="search lg:h-10 lg:w-10 lg:flex lg:justify-center lg:items-center lg:border-[5px] lg:border-black"
+            >
+              <img class="w-5" src="../Assets/search.png" alt="loading" />
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Front Page -->
+
+      <section
+        class="h-56 bg-[url('../Assets/first_background.jpg')] bg-cover flex flex-col justify-center items-center lg:bg-none lg:space-y-3"
+      >
+        <div class="main_heading hidden w-[48rem] pt-40 lg:block xl:pt-[30rem]">
+          <h1 class="text-white text-5xl text-center font-bold">
+            Learn the fundamentals with our Experts in
+            <span class="text-blue-800">Web Design</span>
+          </h1>
+        </div>
+
+        <div class="main_para w-60 pt-10 lg:w-fit lg:pt-0 xl:py-8">
+          <h1
+            class="text-white text-xl font-sans font-bold text-center lg:font-normal lg:text-xl xl:text-2xl"
+          >
+            Utilize Effective Learning to Reach Your Potential!
+          </h1>
+        </div>
+
+        <div class="animation pb-2">
+          <h1 class="text-blue-700 text-xl font-sans font-bold lg:hidden">
+            Web Design
+          </h1>
+
+          <div class="search hidden lg:block lg:flex lg:items-center">
+            <input
+              id="txt"
+              class="w-96 h-16 rounded-lg xl:w-[30rem]"
+              type="text"
+            />
+            <label for="txt"
+              ><img
+                class="w-8 relative -translate-x-12 cursor-pointer"
+                src="../Assets/search.png"
+                alt="loading"
+            /></label>
+          </div>
+        </div>
+
+        <div
+          class="para flex items-center lg:flex-col xl:flex-row xl:space-x-2"
+        >
+          <p class="text-[8px] text-white lg:text-lg">
+            Explore our more useful products
+          </p>
+          <img class="w-2 lg:w-4" src="../Assets/heart.png" alt="loading" />
+        </div>
+
+        <div class="logos flex items-center space-x-3 lg:space-x-12">
+          <div class="first">
+            <img
+              class="h-4 w-16 lg:h-12 lg:w-40"
+              src="../Assets/first_going.png"
+              alt="loading"
+            />
+          </div>
+          <div class="second">
+            <img
+              class="h-3 w-20 lg:h-10 lg:w-44"
+              src="../Assets/Second_going.png"
+              alt="loading"
+            />
+          </div>
+          <div class="third">
+            <img
+              class="h-12 w-20 lg:h-24 lg:w-40"
+              src="../Assets/Third_going.png"
+              alt="loading"
+            />
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Sticky item -->
+
+    <section>
+      <div
+        class="fixed bottom-8 left-3 flex justify-start items-center space-x-3"
+      >
+        <div
+          class="logo bg-[#356ac6] w-12 h-12 flex justify-center items-center rounded-full"
+        >
+          <img class="w-8" src="../Assets/whatapp_logo.svg" alt="loading" />
+        </div>
+        <div class="reminder">
+          <p class="text-sm border-2 bg-[#f5f7f9] w-fit px-4 py-1 rounded-md">
+            Need Help? <span class="font-bold">Chat with us</span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- How it works -->
+
+    <section>
+      <div class="heading flex justify-center">
+        <h1 class="text-4xl font-sans font-bold p-10 md:text-5xl md:p-24">
+          How it works?
+        </h1>
+      </div>
+    </section>
+
+    <!-- Three SVG Files -->
+
+    <section>
+      <div
+        class="main max-w-[1500px] mx-auto grid justify-items-center md:grid-cols-3"
+      >
+        <div class="one">
+          <img class="w-64" src="../Assets/how_it_works_1.svg" alt="loading" />
+        </div>
+        <div class="two">
+          <img class="w-64" src="../Assets/how_it_works_2.svg" alt="loading" />
+        </div>
+        <div class="three">
+          <img class="w-64" src="../Assets/how_it_works_3.svg" alt="loading" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Under Pictures -->
+
+    <section class="my-10">
+      <div
+        class="main max-w-[1280px] mx-auto grid justify-items-center grid-cols-2 gap-10 sm:grid-cols-3 lg:grid-cols-6"
+      >
+        <div
+          class="no1 transition hover:-translate-y-5 duration-200 h-44 w-32 md:w-44 lg:w-28 bg-slate-100 flex flex-col justify-center items-center rounded-xl shadow-md shadow-black space-y-3"
+        >
+          <img src="../Assets/under_1.png" alt="loading" />
+          <p class="font-serif font-bold text-center">ML & AI</p>
+        </div>
+
+        <div
+          class="no2 transition hover:-translate-y-5 duration-200 h-44 w-32 md:w-44 lg:w-28 bg-slate-100 flex flex-col justify-center items-center rounded-xl shadow-md shadow-black space-y-3"
+        >
+          <img src="../Assets/under_2.png" alt="loading" />
+          <p class="font-serif font-bold text-center">Block Chain</p>
+        </div>
+
+        <div
+          class="no3 transition hover:-translate-y-5 duration-200 h-44 w-32 md:w-44 lg:w-28 bg-slate-100 flex flex-col justify-center items-center rounded-xl shadow-md shadow-black space-y-3"
+        >
+          <img src="../Assets/under_3.png" alt="loading" />
+          <p class="font-serif font-bold text-center">Amazon</p>
+        </div>
+
+        <div
+          class="no4 transition hover:-translate-y-5 duration-200 h-44 w-32 md:w-44 lg:w-28 bg-slate-100 flex flex-col justify-center items-center rounded-xl shadow-md shadow-black space-y-3"
+        >
+          <img src="../Assets/under_4.png" alt="loading" />
+          <p class="font-serif font-bold text-center">Cyber Security</p>
+        </div>
+
+        <div
+          class="no5 transition hover:-translate-y-5 duration-200 h-44 w-32 md:w-44 lg:w-28 bg-slate-100 flex flex-col justify-center items-center rounded-xl shadow-md shadow-black space-y-3"
+        >
+          <img src="../Assets/under_5.png" alt="loading" />
+          <p class="font-serif font-bold text-center">Development</p>
+        </div>
+
+        <div
+          class="no6 transition hover:-translate-y-5 duration-200 h-44 w-32 md:w-44 lg:w-28 bg-slate-100 flex flex-col justify-center items-center rounded-xl shadow-md shadow-black space-y-3"
+        >
+          <img src="../Assets/under_6.png" alt="loading" />
+          <p class="font-serif font-bold text-center">Designing</p>
+        </div>
+
+        <div
+          class="no7 transition hover:-translate-y-5 duration-200 h-44 w-32 md:w-44 lg:w-28 bg-slate-100 flex flex-col justify-center items-center rounded-xl shadow-md shadow-black space-y-3"
+        >
+          <img src="../Assets/under_7.png" alt="loading" />
+          <p class="font-serif font-bold text-center">Gaming</p>
+        </div>
+
+        <div
+          class="no8 transition hover:-translate-y-5 duration-200 h-44 w-32 md:w-44 lg:w-28 bg-slate-100 flex flex-col justify-center items-center rounded-xl shadow-md shadow-black space-y-3"
+        >
+          <img src="../Assets/under_8.png" alt="loading" />
+          <p class="font-serif font-bold text-center">Architecture</p>
+        </div>
+
+        <div
+          class="no9 transition hover:-translate-y-5 duration-200 h-44 w-32 md:w-44 lg:w-28 bg-slate-100 flex flex-col justify-center items-center rounded-xl shadow-md shadow-black space-y-3"
+        >
+          <img src="../Assets/under_9.png" alt="loading" />
+          <p class="font-serif font-bold text-center">IOS and AND</p>
+        </div>
+
+        <div
+          class="no10 transition hover:-translate-y-5 duration-200 h-44 w-32 md:w-44 lg:w-28 bg-slate-100 flex flex-col justify-center items-center rounded-xl shadow-md shadow-black space-y-3"
+        >
+          <img src="../Assets/under_10.png" alt="loading" />
+          <p class="font-serif font-bold text-center">Marketing</p>
+        </div>
+
+        <div
+          class="no11 transition hover:-translate-y-5 duration-200 h-44 w-32 md:w-44 lg:w-28 bg-slate-100 flex flex-col justify-center items-center rounded-xl shadow-md shadow-black space-y-3"
+        >
+          <img src="../Assets/under_11.png" alt="loading" />
+          <p class="font-serif font-bold text-center">3D</p>
+        </div>
+
+        <div
+          class="no12 transition hover:-translate-y-5 duration-200 h-44 w-32 md:w-44 lg:w-28 bg-slate-100 flex flex-col justify-center items-center rounded-xl shadow-md shadow-black space-y-3"
+        >
+          <img src="../Assets/under_12.png" alt="loading" />
+          <p class="font-serif font-bold text-center">Animation</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Courses Heading -->
+
+    <section>
+      <div class="mian mt-24">
+        <div class="title space-y-3">
+          <h1 class="text-center text-[40px] leading-none font-bold">
+            Limited-Time Summer Courses Bundles!
+          </h1>
+          <p class="text-center text-xl">
+            Note: All these Bundles have Recorded lectures
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- the courses -->
+
+    <section
+      class="max-w-[1280px] mx-auto grid justify-items-center gap-4 md:grid-cols-2"
+    >
+      <div class="first border-2 border-black w-80 mt-10 lg:w-[30rem]">
+        <div
+          class="no1 text-center space-y-3 flex flex-col justify-center items-center p-4 bg-blue-500"
+        >
+          <h1 class="text-white font-bold text-lg">
+            Web Development Course with Industrial Projects
+          </h1>
+          <p class="text-white">4 Courses</p>
+        </div>
+        <hr />
+        <div class="no2 flex justify-between items-center">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates
+            minima animi.
+          </p>
+          <p>PKR 7,600</p>
+        </div>
+        <hr />
+        <div class="no3 flex justify-between items-center">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates
+            minima animi.
+          </p>
+          <p>PKR 7,600</p>
+        </div>
+        <hr />
+        <div class="no4 flex justify-between items-center">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates
+            minima animi.
+          </p>
+          <p>PKR 7,600</p>
+        </div>
+        <hr />
+        <div class="no5 flex justify-between items-center">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates
+            minima animi.
+          </p>
+          <p>PKR 7,600</p>
+        </div>
+        <hr />
+        <div class="no6 h-12 flex justify-end items-end">
+          <p class="font-bold">
+            PKR10,000
+            <span class="text-sm font-normal"><del>PKR33,100</del></span>
+          </p>
+        </div>
+      </div>
+
+      <div class="first border-2 border-black w-80 mt-10 lg:w-[30rem]">
+        <div
+          class="no1 text-center space-y-3 flex flex-col justify-center items-center p-4 bg-blue-500"
+        >
+          <h1 class="text-white font-bold text-lg">
+            Digital Marketing Mastery Learn for the best.
+          </h1>
+          <p class="text-white">6 Courses</p>
+        </div>
+        <hr />
+        <div class="no2 flex justify-between items-center">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates
+            minima animi.
+          </p>
+          <p>PKR 7,600</p>
+        </div>
+        <hr />
+        <div class="no3 flex justify-between items-center">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates
+            minima animi.
+          </p>
+          <p>PKR 7,600</p>
+        </div>
+        <hr />
+        <div class="no4 flex justify-between items-center">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates
+            minima animi.
+          </p>
+          <p>PKR 7,600</p>
+        </div>
+        <hr />
+        <div class="no5 flex justify-between items-center">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates
+            minima animi.
+          </p>
+          <p>PKR 7,600</p>
+        </div>
+        <hr />
+        <div class="no6 h-12 flex justify-end items-end">
+          <p class="font-bold">
+            PKR10,000
+            <span class="text-sm font-normal"><del>PKR33,100</del></span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Inernship heading -->
+
+    <section>
+      <div class="mian mt-24">
+        <div class="title space-y-3">
+          <h1 class="text-center text-[48px] leading-none font-bold">
+            Perfect Intership's For You
+          </h1>
+        </div>
+      </div>
+    </section>
+
+    <!-- Internships -->
+
+    <section
+      class="max-w-[1280px] mx-auto grid gap-4 justify-items-center lg:grid-cols-2 xl:grid-cols-3"
+    >
+      <div
+        class="main mt-10 border-2 border-black rounded-xl w-72 overflow-hidden md:w-96"
+      >
+        <div
+          class="top bg-[url('../Assets/Intership_background.webp')] bg-cover bg-no-repeat bg-center bg-roun flex flex-col justify-center items-center md:flex-row-reverse gap-5"
+        >
+          <img class="w-14" src="../Assets/internship_1.png" alt="loading" />
+
+          <div
+            class="data flex flex-col justify-center items-center md:justify-start md:items-center"
+          >
+            <h1 class="text-xl font-bold text-white">HTML & CSS JavaScipt</h1>
+            <hr class="w-[70%] md:w-[90%] my-2" />
+            <p class="text-white">Ezitech Institute</p>
+          </div>
+        </div>
+
+        <div class="mid space-y-4 space-x-4">
+          <div class="no1 flex justify-start items-center space-x-2 pt-8 mx-4">
+            <div class="img bg-blue-200 p-1 rounded-full">
+              <img src="../Assets/profession.png" alt="loading" />
+            </div>
+
+            <h1>Employemnt -</h1>
+            <p class="bg-blue-200 w-fit rounded">Hybrid</p>
+          </div>
+
+          <div class="no2 flex justify-start items-center space-x-2">
+            <div class="img bg-blue-200 p-1 rounded-full">
+              <img src="../Assets/telegram.png" alt="loading" />
+            </div>
+
+            <h1>Loaction -</h1>
+            <p class="bg-blue-200 w-fit rounded">Rawalpindi</p>
+          </div>
+
+          <div class="no3 flex justify-start items-center space-x-2">
+            <div class="img bg-blue-200 p-1 rounded-full">
+              <img src="../Assets/briefcase.png" alt="loading" />
+            </div>
+
+            <h1>Job Type -</h1>
+            <p class="bg-blue-200 w-fit rounded">Full time</p>
+          </div>
+
+          <div class="no4">
+            <p class="bg-blue-200 w-fit rounded">Part Time</p>
+          </div>
+        </div>
+
+        <div class="bottom flex justify-center items-center p-2">
+          <button
+            class="text-white font-bold bg-blue-500 text-lg px-3 py-2 rounded"
+          >
+            Read More
+          </button>
+        </div>
+      </div>
+
+      <div
+        class="main mt-10 border-2 border-black rounded-xl w-72 overflow-hidden md:w-96"
+      >
+        <div
+          class="top bg-[url('../Assets/Intership_background.webp')] bg-cover bg-no-repeat bg-center bg-roun flex flex-col justify-center items-center md:flex-row-reverse gap-5"
+        >
+          <img class="w-14" src="../Assets/Internship_2.png" alt="loading" />
+          <div
+            class="data flex flex-col justify-center items-center md:justify-start md:items-center"
+          >
+            <h1 class="text-xl font-bold text-white">Graphic Designing</h1>
+            <hr class="w-[70%] md:w-[90%] my-2" />
+            <p class="text-white">Ezitech Institute</p>
+          </div>
+        </div>
+
+        <div class="mid space-y-4 space-x-4">
+          <div class="no1 flex justify-start items-center space-x-2 pt-8 mx-4">
+            <div class="img bg-blue-200 p-1 rounded-full">
+              <img src="../Assets/profession.png" alt="loading" />
+            </div>
+            <h1>Employemnt -</h1>
+            <p class="bg-blue-200 w-fit rounded">Hybrid</p>
+          </div>
+          <div class="no2 flex justify-start items-center space-x-2">
+            <div class="img bg-blue-200 p-1 rounded-full">
+              <img src="../Assets/telegram.png" alt="loading" />
+            </div>
+            <h1>Loaction -</h1>
+            <p class="bg-blue-200 w-fit rounded">Rawalpindi</p>
+          </div>
+          <div class="no3 flex justify-start items-center space-x-2">
+            <div class="img bg-blue-200 p-1 rounded-full">
+              <img src="../Assets/briefcase.png" alt="loading" />
+            </div>
+            <h1>Job Type -</h1>
+            <p class="bg-blue-200 w-fit rounded">Full time</p>
+          </div>
+          <div class="no4">
+            <p class="bg-blue-200 w-fit rounded">Part Time</p>
+          </div>
+        </div>
+        <div class="bottom flex justify-center items-center p-2">
+          <button
+            class="text-white font-bold bg-blue-500 text-lg px-3 py-2 rounded"
+          >
+            Read More
+          </button>
+        </div>
+      </div>
+
+      <div
+        class="main mt-10 border-2 border-black rounded-xl w-72 overflow-hidden md:w-96"
+      >
+        <div
+          class="top bg-[url('../Assets/Intership_background.webp')] bg-cover bg-no-repeat bg-center bg-roun flex flex-col justify-center items-center md:flex-row-reverse gap-5"
+        >
+          <img class="w-14" src="../Assets/Internship_3.png" alt="loading" />
+          <div
+            class="data flex flex-col justify-center items-center md:justify-start md:items-center"
+          >
+            <h1 class="text-xl font-bold text-white">Digital Marketing</h1>
+            <hr class="w-[70%] md:w-[90%] my-2" />
+            <p class="text-white">Ezitech Institute</p>
+          </div>
+        </div>
+
+        <div class="mid space-y-4 space-x-4">
+          <div class="no1 flex justify-start items-center space-x-2 pt-8 mx-4">
+            <div class="img bg-blue-200 p-1 rounded-full">
+              <img src="../Assets/profession.png" alt="loading" />
+            </div>
+            <h1>Employemnt -</h1>
+            <p class="bg-blue-200 w-fit rounded">Hybrid</p>
+          </div>
+          <div class="no2 flex justify-start items-center space-x-2">
+            <div class="img bg-blue-200 p-1 rounded-full">
+              <img src="../Assets/telegram.png" alt="loading" />
+            </div>
+            <h1>Loaction -</h1>
+            <p class="bg-blue-200 w-fit rounded">Rawalpindi</p>
+          </div>
+          <div class="no3 flex justify-start items-center space-x-2">
+            <div class="img bg-blue-200 p-1 rounded-full">
+              <img src="../Assets/briefcase.png" alt="loading" />
+            </div>
+            <h1>Job Type -</h1>
+            <p class="bg-blue-200 w-fit rounded">Full time</p>
+          </div>
+          <div class="no4">
+            <p class="bg-blue-200 w-fit rounded">Part Time</p>
+          </div>
+        </div>
+        <div class="bottom flex justify-center items-center p-2">
+          <button
+            class="text-white font-bold bg-blue-500 text-lg px-3 py-2 rounded"
+          >
+            Read More
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Load More -->
+
+    <section>
+      <div class="main flex justify-center items-center mt-12">
+        <button
+          class="text-lg bg-blue-500 text-white font-bold font-serif py-1 px-7 rounded hover:bg-blue-300"
+        >
+          Load More
+        </button>
+      </div>
+    </section>
+
+    <!-- Details -->
+
+    <section class="max-w-[1280px] mx-auto">
+      <div class="main mt-16 sm:flex sm:justify-center sm:items-center">
+        <div class="left hidden sm:block">
+          <img class="w-52" src="../Assets/detail_big.webp" alt="loading" />
+        </div>
+
+        <div
+          class="right w-fit sm:flex sm:flex-col sm:justify-center sm:items-center"
+        >
+          <h1 class="text-center text-5xl font-bold sm:text-3xl sm:w-[60%]">
+            Learn <span class="text-blue-500"> anytime </span> from anywhere
+          </h1>
+
+          <p class="hidden lg:block lg:w-[55%]">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste sequi
+            ad incidunt autem sit reiciendis quis modi sed error delectus
+            quidem, cum omnis facere rem quaerat rerum unde iure mollitia?
+          </p>
+
+          <div class="images mt-10 flex justify-center items-center gap-3">
+            <img
+              class="w-32 sm:w-24"
+              src="../Assets/detail_left.webp"
+              alt="loading"
+            />
+            <img
+              class="w-32 sm:w-24"
+              src="../Assets/detail_right.png"
+              alt="loading"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Investment -->
+
+    <section>
+      <div
+        class="main bg-[url('../Assets/Investment.jpeg')] bg-cover bg-no-repeat bg-center mt-14 md:space-y-3 xl:space-y-10"
+      >
+        <div class="heading flex justify-center items-center">
+          <h1
+            class="text-4xl font-serif font-bold pt-14 text-center text-white md:w-[60%]"
+          >
+            It's time to <span class="text-blue-500">start</span> investing in
+            your self
+          </h1>
+        </div>
+
+        <div class="btn flex justify-center items-center">
+          <button
+            class="bg-blue-400 font-serif text-white font-semibold text-lg py-3 px-8 text-center my-40 rounded md:hidden"
+          >
+            Get Started
+          </button>
+
+          <img
+            class="hidden md:block"
+            src="../Assets/investment_1.webp"
+            alt="loading"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+
+    <footer class="bg-[#042d89] text-white">
+      <hr class="hidden md:block" />
+
+      <div
+        class="main md:max-w-[1280px] md:mx-auto md:grid md:justify-items-center md:grid-cols-2 lg:grid-cols-4 lg:py-3 md:py-8"
+      >
+        <div class="about w-[80%] flex flex-col space-y-3 justify-start mx-3">
+          <h1 class="text-lg font-bold pt-7 uppercase">About</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum,
+            veniam enim facilis expedita commodi tempore officia aperiam
+            nesciunt!
+          </p>
+        </div>
+
+        <div class="popular_courses w-[80%] space-y-3 mx-3">
+          <h1 class="text-lg font-bold pt-7 uppercase">Popular Courses</h1>
+
+          <div class="top flex space-x-1">
+            <img class="w-12" src="../Assets/footer_1.webp" alt="loading" />
+            <div class="show flex flex-col justify-start">
+              <h1 class="leading-none">
+                Online Arbitrage Mastermind 2.0 [R...
+              </h1>
+              <p class="text-sm leading-none">By Husanian Ali</p>
+            </div>
+          </div>
+          <div class="bottom flex space-x-1">
+            <img class="w-12" src="../Assets/footer_2.webp" alt="loading" />
+            <div class="show flex flex-col justify-start">
+              <h1 class="leading-none">
+                The complete Bootstrap 2024 Node.j...
+              </h1>
+              <p class="text-sm leading-none">By Ezitech</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="pages w-[80%] mx-3">
+          <h1 class="text-lg font-bold pt-7 uppercase">Pages</h1>
+          <ul class="list-disc pl-5">
+            <li class="uppercase text-sm">Blog</li>
+            <li class="uppercase text-sm">Ezicoding</li>
+            <li class="uppercase text-sm">Internship</li>
+            <li class="uppercase text-sm">Our Services</li>
+          </ul>
+        </div>
+
+        <div class="contacts space-y-3 mx-3">
+          <h1 class="text-lg font-bold pt-7 uppercase">Contact</h1>
+
+          <div class="no1 flex items-start gap-2">
+            <img src="../Assets/location_logo.png" alt="loading" />
+            <p>
+              Office #304-B Amna Plaza, near Radio Pakistan, Rawalpindi, Punjab
+              46000
+            </p>
+          </div>
+          <div class="no2 w-4 flex items-center gap-2">
+            <img src="../Assets/call logo.png" alt="loading" />
+            <p>+923455555396</p>
+          </div>
+          <div class="no3 w-4 flex items-center gap-2">
+            <img src="../Assets/email.png" alt="loading" />
+            <p>info@ezitech.org</p>
+          </div>
+        </div>
+      </div>
+
+      <hr class="hidden md:block" />
+
+      <div class="copyright mt-14 text-center">
+        <p>
+          Copyright © 2024 Ezitech Institute | Design & Develop by
+          <u>Eziline Software House</u>
+        </p>
+      </div>
+
+      <div class="logo py-3 flex items-center gap-4 md:justify-end">
+        <div class="log_no_1 pl-3">
+          <img class="w-4" src="../Assets/facebook_logo.png" alt="loading" />
+        </div>
+        <div class="log_no_2">
+          <img class="w-4" src="../Assets/BE_logo.png" alt="loading" />
+        </div>
+        <div class="log_no_3">
+          <img class="w-4" src="../Assets/In_logo.png" alt="loading" />
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      function show() {
+        let i = document.getElementById('humburger');
+
+        i.classList.toggle('-translate-x-[68rem]');
+      }
+    </script>
+  </body>
+</html>
